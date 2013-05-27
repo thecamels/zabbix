@@ -1,4 +1,6 @@
 zabbix
 ======
+Script and templates for Zabbix 2.0.x. 
 
-Script and templates for Zabbix
+Please let us know if you have any questions or concerns.
+The Camels
