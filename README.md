@@ -29,21 +29,29 @@ Monitoring basic WHM/cPanel services.
 
 Template Device BigIP F5
 ======
+Monitoring of F5 BigIP network load balancer. It uses SNMP items to monitor basic device parameters (CPU/RAM usage, hardware failure, global traffic) and also it discovers network interfaces, storage, virtual servers and pools
 
 Template Device Cisco ASA
 ======
+Monitoring of Cisco ASA firewall. It uses SNMP items to monitor basic device parameters (CPU/RAM usage, hardware failure, global traffic) and also it discovers 
+network interfaces.
 
 Template Device NetApp
 ======
+Monitoring of F5 BigIP network load balancer. It uses SNMP items to monitor basic device parameters (CPU/RAM usage, disk status, hardware failure, global traffic) and also it discovers snap mirrors volumens (more discovery rules in the future)
 
 Template Device SNMP Generic
 ======
+This is a generic template for SNMP (and any other in fact) devices that do not provide any information via SNMP/any other protocol. It only checks for host availability
 
 Template Inventory
 ======
+This template is used to collect data for automatic host inventory (architecture, operating system, hardware etc). Requires facter (puppetlabs)
 
 Template OMSA
 ======
+Collects data from OpenManage Server Administrator (OMSA) tool for Dell Servers. It monitors hardware components such as chassis, disks, power supplies, fans and other
 
 Template Security
 ======
+Contains items related with basic linux security (iptables status, selinux status) and Fail2ban application
