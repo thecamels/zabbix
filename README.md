@@ -38,7 +38,7 @@ network interfaces.
 
 Template Device NetApp
 ======
-Monitoring of F5 BigIP network load balancer. It uses SNMP items to monitor basic device parameters (CPU/RAM usage, disk status, hardware failure, global traffic) and also it discovers snap mirrors volumens (more discovery rules in the future)
+Monitoring of NetApp dedicated NAS disk arrays. It uses SNMP items to monitor basic device parameters (CPU/RAM usage, disk status, hardware failure, global traffic) and also it discovers snap mirrors volumens (more discovery rules in the future)
 
 Template Device SNMP Generic
 ======
