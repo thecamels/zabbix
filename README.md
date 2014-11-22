@@ -19,7 +19,7 @@ Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File ``
 
 Template App Brocade HBA
 ======
-Monitoring for Network Adapters - Brocade. Template is usind Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
+Monitoring for Network Adapters - Brocade. Template is using Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
 
 Template App Nscd
 ======
