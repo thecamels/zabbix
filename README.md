@@ -1,12 +1,12 @@
 Zabbix
 ======
-Script and templates for Zabbix 2.2.x. 
+Script and templates for Zabbix 2.2.x. and 2.4.x
 
 - In /bin you will find Bash/Perl/PHP scripts used by some User Parameters (need to be installed on agent)
 - In Templates there are XML files ready to import using Zabbix GUI
 - In zabbix_agentd.conf.d there are custom User Parameters (need to be installed on agent)
 
-Please let us know if you have any questions or concerns.
+Templates was tested on Red Hat 5.x, 6.x and CentOS 5.x, 6.x. Please let us know if you have any questions or concerns.
 
 The Camels Team
 http://thecamels.org
@@ -14,6 +14,16 @@ http://thecamels.org
 Template App APC
 ======
 Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File apc-stats.php need to be accessed via HTTP for example http://127.0.0.1/apc-stats.php
+
+Template App Brocade HBA
+======
+Monitoring for Network Adapters - Brocade.
+
+Template App Nscd
+======
+Nscd is a daemon that provides a cache for the most common name service requests. Nscd provides caching for accesses of the passwd(5), group(5), and hosts(5) databases through standard libc interfaces, such as getpwnam(3), getpwuid(3), getgrnam(3), getgrgid(3), gethostbyname(3), and others.
+
+You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /usr/sbin/nscd -g```
 
 Template App OPcache
 ======
@@ -181,6 +191,8 @@ Dell Open Manage System Status
 6 - NonRecoverable
 ```
 
+You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /opt/dell/srvadmin/bin/omreport```
+
 Template Security
 ======
-Contains items related with basic linux security (iptables status, selinux status) and Fail2ban application
+Contains items related with basic linux security (iptables status, selinux status) and Fail2ban application. You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /sbin/iptables -L INPUT -n```
