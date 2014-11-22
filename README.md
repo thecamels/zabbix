@@ -43,8 +43,17 @@ F5 ltmPoolStatusAvailState
 
 Template Device Cisco ASA
 ======
-Monitoring of Cisco ASA firewall. It uses SNMP items to monitor basic device parameters (CPU/RAM usage, hardware failure, global traffic) and also it discovers 
-network interfaces.
+Monitoring of Cisco ASA firewall. It uses SNMP items to monitor basic device parameters (CPU/RAM usage, hardware failure, global traffic) and also it discovers network interfaces. It requires manual addition of value mappings (Administration -> General -> Value Mapping)
+
+```
+Cisco ASA Failover status
+9 ⇒ Active
+10 ⇒ Standby
+
+Cisco Interface Status
+1 ⇒ up
+2 ⇒ down
+```
 
 Template Device NetApp
 ======
