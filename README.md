@@ -6,18 +6,20 @@ Script and templates for Zabbix 2.2.x. and 2.4.x
 - In Templates there are XML files ready to import using Zabbix GUI
 - In zabbix_agentd.conf.d there are custom User Parameters (need to be installed on agent)
 
-Templates was tested on Red Hat 5.x, 6.x and CentOS 5.x, 6.x. Please let us know if you have any questions or concerns.
+Templates was tested on Red Hat 5.x, 6.x and CentOS 5.x, 6.x. Common UserParameter were added to ```zabbix_agentd.conf.d/linux.conf``` file. Please add it to your own Zabbix Agent installation.
+
+Please let us know if you have any questions or concerns.
 
 The Camels Team
 http://thecamels.org
 
 Template App APC
 ======
-Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File apc-stats.php need to be accessed via HTTP for example http://127.0.0.1/apc-stats.php
+Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File ```bin/apc-stats.php``` need to be accessed via HTTP for example http://127.0.0.1/apc-stats.php
 
 Template App Brocade HBA
 ======
-Monitoring for Network Adapters - Brocade.
+Monitoring for Network Adapters - Brocade. Template is usind Discovery to create Items and Triggers.
 
 Template App Nscd
 ======
@@ -27,7 +29,7 @@ You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /usr/sbin
 
 Template App OPcache
 ======
-Monitoring memory usage of OPcache (http://php.net/manual/en/book.opcache.php). File opcache.php need to be accessed via HTTP for example http://127.0.0.1/opcache.php. Curl need to be installed on server.
+Monitoring memory usage of OPcache (http://php.net/manual/en/book.opcache.php). File ```bin/opcache.php``` need to be accessed via HTTP for example http://127.0.0.1/opcache.php. Curl need to be installed on server.
 
 Template App RabbitMQ
 ======
