@@ -6,7 +6,7 @@ Script and templates for Zabbix 2.2.x. and 2.4.x
 - In Templates there are XML files ready to import using Zabbix GUI
 - In zabbix_agentd.conf.d there are custom User Parameters (need to be installed on agent)
 
-Templates was tested on Red Hat 5.x, 6.x and CentOS 5.x, 6.x. Common UserParameter were added to ```zabbix_agentd.conf.d/linux.conf``` file. Please add it to your own Zabbix Agent installation.
+Templates was tested on Red Hat 5.x, 6.x and CentOS 5.x, 6.x. Common UserParameter were added to ```zabbix_agentd.conf.d/linux.conf``` file. Please add it to your own Zabbix Agent installation. Sometimes you need to use SUDO for UserParameter. All rules are in file ```sudoers.d/zabbix```.
 
 Please let us know if you have any questions or concerns.
 
@@ -19,7 +19,7 @@ Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File ``
 
 Template App Brocade HBA
 ======
-Monitoring for Network Adapters - Brocade. Template is usind Discovery to create Items and Triggers.
+Monitoring for Network Adapters - Brocade. Template is usind Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
 
 Template App Nscd
 ======
@@ -33,7 +33,12 @@ Monitoring memory usage of OPcache (http://php.net/manual/en/book.opcache.php). 
 
 Template App RabbitMQ
 ======
-Monitoring RabbitMQ (http://www.rabbitmq.com/) basic parameters like queues, exchanges and memory usage. You need install PHP on server for monitoring RabbitMQ.
+Monitoring RabbitMQ (http://www.rabbitmq.com/) basic parameters like queues, exchanges and memory usage. You need install PHP on server for monitoring RabbitMQ. You need also add SUDO for zabbix user:
+
+```
+zabbix ALL=(ALL) NOPASSWD: /usr/sbin/rabbitmqctl
+zabbix ALL=(ALL) NOPASSWD: /usr/bin/php /etc/zabbix/bin/rabbit.php
+```
 
 Template App cPanel
 ======
@@ -194,6 +199,10 @@ Dell Open Manage System Status
 ```
 
 You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /opt/dell/srvadmin/bin/omreport```
+
+Template App PowerPath
+======
+
 
 Template Security
 ======

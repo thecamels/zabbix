@@ -1,0 +1,8 @@
+zabbix ALL=(ALL) NOPASSWD: /sbin/iptables -L INPUT -n
+zabbix ALL=(ALL) NOPASSWD: /usr/sbin/nscd -g
+zabbix ALL=(ALL) NOPASSWD: /usr/sbin/rabbitmqctl
+zabbix ALL=(ALL) NOPASSWD: /usr/bin/php /etc/zabbix/bin/rabbit.php
+zabbix ALL=(ALL) NOPASSWD: /opt/dell/srvadmin/bin/omreport
+zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu
+zabbix ALL=(ALL) NOPASSWD: /sbin/powermt
+Defaults:zabbix        !requiretty
