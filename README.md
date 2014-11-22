@@ -47,12 +47,12 @@ Monitoring of Cisco ASA firewall. It uses SNMP items to monitor basic device par
 
 ```
 Cisco ASA Failover status
-9 ⇒ Active
-10 ⇒ Standby
+9 - Active
+10 - Standby
 
 Cisco Interface Status
-1 ⇒ up
-2 ⇒ down
+1 - up
+2 - down
 ```
 
 Template Device NetApp
