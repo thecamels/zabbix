@@ -1,7 +1,5 @@
 #!/bin/bash
 # Script for HDD discovery
-# Created by:
-# Michał Macioszek, Taras Baran, Michal Gębora, Marcin Wilk, Maks Bednarek, Anna Fałek, Mikołaj Szczuraszek
 #
 
 
