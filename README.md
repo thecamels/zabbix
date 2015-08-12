@@ -17,6 +17,49 @@ Template App APC
 ======
 Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File ```bin/apc-stats.php``` need to be accessed via HTTP for example http://127.0.0.1/apc-stats.php
 
+Template App Amavisd
+======
+Monitoring for Amavisd service.
+
+Template App BIND
+======
+Monitoring for BIND (DNS server) service. Checking also version of BIND.
+
+Template App Clamav
+======
+Monitoring for ClamAV.
+
+Template App Dovecot
+======
+Monitoring for Dovecot.
+
+Template App Etherpad
+======
+Monitoring for Etherpad (http://etherpad.org/)
+
+Template App Exim
+=====
+Monitoring for mail server Exim.
+
+Template App lm_sensors
+=====
+Monitoring CPU and MotherBoard temperatures by lm_senros module.
+
+Template App mdadm
+======
+Monitoring mdadm arrays. Checking number of corrupted disk arrays.
+
+Template App MySQL
+=====
+Monitoring for MySQL 5.5, 5.6 and 5.7. It is using PHP-cli for monitoring. You need also add zabbix user to database. Please run SQL query:
+```
+CREATE USER 'zabbix'@'localhost' IDENTIFIED BY 'ha7jqnlacwefrs';
+GRANT REPLICATION CLIENT, SELECT, PROCESS, SHOW DATABASES ON *.* TO 'zabbix'@'localhost' IDENTIFIED BY 'ha7jqnlacwefrs';
+FLUSH PRIVILEGES;
+```
+
+If you want change password, you need to edit files ```.my.cnf``` and also in file ```bin/ss_get_mysql_stats.php```.
+
 Template App Brocade HBA
 ======
 Monitoring for Network Adapters - Brocade. Template is using Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
@@ -206,11 +249,7 @@ Monitoring for S.M.A.R.T. enabled storage devices (HDD's, SSD's and other). Uses
 
 Template App PowerPath
 ======
-<<<<<<< HEAD
-EMC PowerPath: Host-based software for automated data path management, failover and recovery, and optimized load balancing. PowerPath automates, standardizes, and optimizes data paths in physical and virtual environments as well as cloud deployments to deliver high availability and performance.
-=======
 Monitoring for EMC PowerPath: Host-based software for automated data path management, failover and recovery, and optimized load balancing. PowerPath automates, standardizes, and optimizes data paths in physical and virtual environments as well as cloud deployments to deliver high availability and performance.
->>>>>>> 3ed283df96fdc7b7052da5e6dc946265e1761962
 
 Template Security
 ======
