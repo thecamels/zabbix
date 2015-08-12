@@ -200,6 +200,10 @@ Dell Open Manage System Status
 
 You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /opt/dell/srvadmin/bin/omreport```
 
+Template App S.M.A.R.T.
+======
+Monitoring for S.M.A.R.T. enabled storage devices (HDD's, SSD's and other). Uses discovery script to populate disks. INFO: For non present S.M.A.R.T. values disable items on per-host level.
+
 Template App PowerPath
 ======
 <<<<<<< HEAD
