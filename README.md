@@ -60,6 +60,21 @@ FLUSH PRIVILEGES;
 
 If you want change password, you need to edit files ```.my.cnf``` and also in file ```bin/ss_get_mysql_stats.php```.
 
+Template App MySQL Slave
+=====
+Monitoring for replication in MySQL 5.5, 5.6 and 5.7. Please run SQL query:
+```
+CREATE USER 'zabbix'@'localhost' IDENTIFIED BY 'ha7jqnlacwefrs';
+GRANT REPLICATION CLIENT, SELECT, PROCESS, SHOW DATABASES ON *.* TO 'zabbix'@'localhost' IDENTIFIED BY 'ha7jqnlacwefrs';
+FLUSH PRIVILEGES;
+```
+
+If you want change password, you need to edit files ```.my.cnf```.
+
+Template App Nginx
+======
+Monitoring for Nginx. It is using script ```nginx-check.sh``` written by Vincent Viallet.
+
 Template App Brocade HBA
 ======
 Monitoring for Network Adapters - Brocade. Template is using Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
