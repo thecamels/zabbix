@@ -202,7 +202,11 @@ You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /opt/dell
 
 Template App PowerPath
 ======
+<<<<<<< HEAD
 EMC PowerPath: Host-based software for automated data path management, failover and recovery, and optimized load balancing. PowerPath automates, standardizes, and optimizes data paths in physical and virtual environments as well as cloud deployments to deliver high availability and performance.
+=======
+Monitoring for EMC PowerPath: Host-based software for automated data path management, failover and recovery, and optimized load balancing. PowerPath automates, standardizes, and optimizes data paths in physical and virtual environments as well as cloud deployments to deliver high availability and performance.
+>>>>>>> 3ed283df96fdc7b7052da5e6dc946265e1761962
 
 Template Security
 ======
