@@ -1,6 +1,8 @@
 #!/bin/bash
 # Script for HDD discovery
 #
+# Created by:
+# Michał Macioszek, Taras Baran, Michal Gębora, Marcin Wilk, Maks Bednarek, Anna Fałek, Mikołaj Szczuraszek
 
 
 disks=`ls -l /dev/sd* | awk '{print $NF}' | sed 's/[0-9]//g' | uniq`

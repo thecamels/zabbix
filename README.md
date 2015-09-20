@@ -282,6 +282,10 @@ Template App S.M.A.R.T.
 ======
 Monitoring for S.M.A.R.T. enabled storage devices (HDD's, SSD's and other). Uses discovery script to populate disks. INFO: For non present S.M.A.R.T. values disable items on per-host level.
 
+Template and scripts created by:
+Michał Macioszek, Taras Baran, Michal Gębora, Marcin Wilk, Maks Bednarek, Anna Fałek, Mikołaj Szczuraszek
+
+
 Template App PowerPath
 ======
 Monitoring for EMC PowerPath: Host-based software for automated data path management, failover and recovery, and optimized load balancing. PowerPath automates, standardizes, and optimizes data paths in physical and virtual environments as well as cloud deployments to deliver high availability and performance.
