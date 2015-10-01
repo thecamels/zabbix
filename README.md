@@ -211,3 +211,7 @@ Monitoring for EMC PowerPath: Host-based software for automated data path manage
 Template Security
 ======
 Contains items related with basic linux security (iptables status, selinux status) and Fail2ban application. You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /sbin/iptables -L INPUT -n```
+
+Template Device Back-UPS ES 700G	
+======
+Monitoring of APC UPS dedicated battery power. Requires package apcupsd to be installed. 
