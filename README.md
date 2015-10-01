@@ -17,9 +17,87 @@ Template App APC
 ======
 Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File ```bin/apc-stats.php``` need to be accessed via HTTP for example http://127.0.0.1/apc-stats.php
 
+Template App Amavisd
+======
+Monitoring for Amavisd service.
+
+Template App BIND
+======
+Monitoring for BIND (DNS server) service. Checking also version of BIND.
+
+Template App Clamav
+======
+Monitoring for ClamAV.
+
+Template App Dovecot
+======
+Monitoring for Dovecot.
+
+Template App Etherpad
+======
+Monitoring for Etherpad (http://etherpad.org/)
+
+Template App Exim
+=====
+Monitoring for mail server Exim.
+
+Template App lm_sensors
+=====
+Monitoring CPU and MotherBoard temperatures by lm_senros module.
+
+Template App mdadm
+======
+Monitoring mdadm arrays. Checking number of corrupted disk arrays.
+
+Template App MySQL
+=====
+Monitoring for MySQL 5.5, 5.6 and 5.7. It is using PHP-cli for monitoring. You need also add zabbix user to database. Please run SQL query:
+```
+CREATE USER 'zabbix'@'localhost' IDENTIFIED BY 'ha7jqnlacwefrs';
+GRANT REPLICATION CLIENT, SELECT, PROCESS, SHOW DATABASES ON *.* TO 'zabbix'@'localhost' IDENTIFIED BY 'ha7jqnlacwefrs';
+FLUSH PRIVILEGES;
+```
+
+If you want change password, you need to edit files ```.my.cnf``` and also in file ```bin/ss_get_mysql_stats.php```.
+
+Template App MySQL Slave
+=====
+Monitoring for replication in MySQL 5.5, 5.6 and 5.7. Please run SQL query:
+```
+CREATE USER 'zabbix'@'localhost' IDENTIFIED BY 'ha7jqnlacwefrs';
+GRANT REPLICATION CLIENT, SELECT, PROCESS, SHOW DATABASES ON *.* TO 'zabbix'@'localhost' IDENTIFIED BY 'ha7jqnlacwefrs';
+FLUSH PRIVILEGES;
+```
+
+If you want change password, you need to edit files ```.my.cnf```.
+
+Template App Nginx
+======
+Monitoring for Nginx. It is using script ```nginx-check.sh``` written by Vincent Viallet.
+
 Template App Brocade HBA
 ======
-Monitoring for Network Adapters - Brocade. Template is usind Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
+Monitoring for Network Adapters - Brocade. Template is using Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
+
+Template App OpenDKIM
+======
+Monitoring for OpenDKIM.
+
+Template App Postfix
+======
+Monitoring for mail server Postfix.
+
+Template App Pure-FTPd
+======
+Monitoring for Pure-FTPd.
+
+Template App Spamassassin
+======
+Monitoring for Spamassassin.
+
+Template App vsftpd
+======
+Monitoring for vsftpd.
 
 Template App Nscd
 ======
@@ -203,6 +281,10 @@ You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /opt/dell
 Template App S.M.A.R.T.
 ======
 Monitoring for S.M.A.R.T. enabled storage devices (HDD's, SSD's and other). Uses discovery script to populate disks. INFO: For non present S.M.A.R.T. values disable items on per-host level.
+
+Template and scripts created by:
+Michał Macioszek, Taras Baran, Michal Gębora, Marcin Wilk, Maks Bednarek, Anna Fałek, Mikołaj Szczuraszek
+
 
 Template App PowerPath
 ======
