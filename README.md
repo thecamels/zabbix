@@ -2,11 +2,12 @@ Zabbix
 ======
 Script and templates for Zabbix 2.2.x. and 2.4.x
 
-- In /bin you will find Bash/Perl/PHP scripts used by some User Parameters (need to be installed on agent)
+- In bin you will find Bash/Perl/PHP scripts used by some User Parameters (need to be installed on agent)
+- In sudoers.d you can find settings for sudo
 - In Templates there are XML files ready to import using Zabbix GUI
-- In zabbix_agentd.conf.d there are custom User Parameters (need to be installed on agent)
+- In zabbix_agentd.conf.d there are custom UserParameter (need to be installed on agent)
 
-Templates was tested on Red Hat 5.x, 6.x and CentOS 5.x, 6.x. Common UserParameter were added to ```zabbix_agentd.conf.d/linux.conf``` file. Please add it to your own Zabbix Agent installation. Sometimes you need to use SUDO for UserParameter. All rules are in file ```sudoers.d/zabbix```.
+Templates was tested on Red Hat 5.x, 6.x and CentOS 5.x, 6.x. Common UserParameter were added to ```zabbix_agentd.conf.d/linux.conf``` file. Please add it to your own Zabbix Agent installation. Sometimes you need to use ```sudo``` for ```UserParameter```. All rules are in file ```sudoers.d/zabbix```.
 
 Please let us know if you have any questions or concerns.
 
