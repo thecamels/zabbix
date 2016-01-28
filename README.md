@@ -92,6 +92,10 @@ Template App Pure-FTPd
 ======
 Monitoring for Pure-FTPd.
 
+Template App Redis
+======
+Monitoring for redis server 3.x. Support for redis cluster.
+
 Template App Spamassassin
 ======
 Monitoring for Spamassassin.
