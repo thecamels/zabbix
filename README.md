@@ -14,13 +14,13 @@ Please let us know if you have any questions or concerns.
 The Camels Team
 http://thecamels.org
 
-Template App APC
-======
-Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File ```bin/apc-stats.php``` need to be accessed via HTTP for example http://127.0.0.1/apc-stats.php
-
 Template App Amavisd
 ======
 Monitoring for Amavisd service.
+
+Template App APC
+======
+Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File ```bin/apc-stats.php``` need to be accessed via HTTP for example http://127.0.0.1/apc-stats.php
 
 Template App BIND
 ======
