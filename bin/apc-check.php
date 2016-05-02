@@ -1,7 +1,6 @@
 <?php
 
 $item = $argv[1];
-
 function file_get_contents_curl($url) {
     $ch = curl_init();
 
