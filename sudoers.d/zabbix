@@ -9,4 +9,10 @@ zabbix ALL=(ALL) NOPASSWD: /opt/dell/srvadmin/bin/omreport
 zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu
 zabbix ALL=(ALL) NOPASSWD: /sbin/powermt
 zabbix ALL=(ALL) NOPASSWD: /bin/find /var/spool/postfix/ -type f
+zabbix ALL=(ALL) NOPASSWD: /usr/sbin/httpd -v
+zabbix ALL=(ALL) NOPASSWD: /usr/sbin/dmidecode
+zabbix ALL=(ALL) NOPASSWD: /usr/bin/stat
+zabbix ALL=(ALL) NOPASSWD: /usr/bin/md5sum
+zabbix ALL=(ALL) NOPASSWD: /bin/find /var/lib/mysql/ -type f -printf %p+%s=
+zabbix ALL=(ALL) NOPASSWD: /etc/zabbix/bin/haproxy.sh
 Defaults:zabbix        !requiretty
