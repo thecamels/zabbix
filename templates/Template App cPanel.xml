@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>2.0</version>
-    <date>2013-04-10T14:28:53Z</date>
+    <version>3.0</version>
+    <date>2016-05-02T08:30:02Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Zabbix Templates</name>
         </group>
     </groups>
     <templates>
         <template>
             <template>Template App cPanel</template>
             <name>Template App cPanel</name>
+            <description/>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Zabbix Templates</name>
                 </group>
             </groups>
             <applications>
@@ -28,7 +29,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.listen[2082]</key>
+                    <key>net.tcp.service[tcp,,2082]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -37,9 +38,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -62,6 +66,7 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>cPanel SSL service is running</name>
@@ -69,7 +74,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.listen[2083]</key>
+                    <key>net.tcp.service[tcp,,2083]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -78,9 +83,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -103,6 +111,7 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>WebHost Manager is running</name>
@@ -110,7 +119,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.listen[2086]</key>
+                    <key>net.tcp.service[tcp,,2086]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -119,9 +128,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -144,6 +156,7 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>WebHost Manager SSL service is running</name>
@@ -151,7 +164,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.listen[2087]</key>
+                    <key>net.tcp.service[tcp,,2087]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -160,9 +173,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -185,6 +201,7 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Web mail service is running</name>
@@ -192,7 +209,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.listen[2095]</key>
+                    <key>net.tcp.service[tcp,,2095]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -201,9 +218,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -226,6 +246,7 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Web mail SSL service is running</name>
@@ -233,7 +254,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.listen[2096]</key>
+                    <key>net.tcp.service[tcp,,2096]</key>
                     <delay>120</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -242,9 +263,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -267,6 +291,7 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules/>
@@ -277,8 +302,28 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template App cPanel:net.tcp.listen[2082].sum(#3)}=0</expression>
-            <name>cPanel service is down on {HOSTNAME}</name>
+            <expression>{Template App cPanel:net.tcp.service[tcp,,2082].sum(#3)}=0</expression>
+            <name>cPanel service is down</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template App cPanel:net.tcp.service[tcp,,2083].sum(#3)}=0</expression>
+            <name>cPanel SSL service is down</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template App cPanel:net.tcp.service[tcp,,2086].sum(#3)}=0</expression>
+            <name>WebHost Manager service is down</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -287,8 +332,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template App cPanel:net.tcp.listen[2083].sum(#3)}=0</expression>
-            <name>cPanel SSL service is down on {HOSTNAME}</name>
+            <expression>{Template App cPanel:net.tcp.service[tcp,,2087].sum(#3)}=0</expression>
+            <name>WebHost Manager SSL service is down</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -297,8 +342,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template App cPanel:net.tcp.listen[2086].sum(#3)}=0</expression>
-            <name>WebHost Manager service is down on {HOSTNAME}</name>
+            <expression>{Template App cPanel:net.tcp.service[tcp,,2095].sum(#3)}=0</expression>
+            <name>Webmail service is down</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -307,28 +352,8 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template App cPanel:net.tcp.listen[2087].sum(#3)}=0</expression>
-            <name>WebHost Manager SSL service is down on {HOSTNAME}</name>
-            <url/>
-            <status>0</status>
-            <priority>4</priority>
-            <description/>
-            <type>0</type>
-            <dependencies/>
-        </trigger>
-        <trigger>
-            <expression>{Template App cPanel:net.tcp.listen[2095].sum(#3)}=0</expression>
-            <name>Web mail service is down on {HOSTNAME}</name>
-            <url/>
-            <status>0</status>
-            <priority>4</priority>
-            <description/>
-            <type>0</type>
-            <dependencies/>
-        </trigger>
-        <trigger>
-            <expression>{Template App cPanel:net.tcp.listen[2096].sum(#3)}=0</expression>
-            <name>Web mail SSL service is down on {HOSTNAME}</name>
+            <expression>{Template App cPanel:net.tcp.service[tcp,,2096].sum(#3)}=0</expression>
+            <name>Webmail SSL service is down</name>
             <url/>
             <status>0</status>
             <priority>4</priority>
@@ -365,7 +390,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App cPanel</host>
-                        <key>net.tcp.listen[2082]</key>
+                        <key>net.tcp.service[tcp,,2082]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -377,7 +402,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App cPanel</host>
-                        <key>net.tcp.listen[2083]</key>
+                        <key>net.tcp.service[tcp,,2083]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -389,7 +414,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App cPanel</host>
-                        <key>net.tcp.listen[2086]</key>
+                        <key>net.tcp.service[tcp,,2086]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -401,7 +426,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App cPanel</host>
-                        <key>net.tcp.listen[2087]</key>
+                        <key>net.tcp.service[tcp,,2087]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -413,7 +438,7 @@
                     <type>0</type>
                     <item>
                         <host>Template App cPanel</host>
-                        <key>net.tcp.listen[2095]</key>
+                        <key>net.tcp.service[tcp,,2095]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -425,10 +450,25 @@
                     <type>0</type>
                     <item>
                         <host>Template App cPanel</host>
-                        <key>net.tcp.listen[2096]</key>
+                        <key>net.tcp.service[tcp,,2096]</key>
                     </item>
                 </graph_item>
             </graph_items>
         </graph>
     </graphs>
+    <value_maps>
+        <value_map>
+            <name>Service state</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Down</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Up</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
 </zabbix_export>

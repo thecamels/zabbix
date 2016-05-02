@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>2.0</version>
-    <date>2015-08-12T07:27:21Z</date>
+    <version>3.0</version>
+    <date>2016-05-02T08:38:04Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Zabbix Templates</name>
         </group>
     </groups>
     <templates>
@@ -14,7 +14,7 @@
             <description/>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Zabbix Templates</name>
                 </group>
             </groups>
             <applications>
@@ -67,17 +67,17 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>OpenDKIM service is running</name>
+                    <name>OpenDKIM version</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>proc.num[opendkim]</key>
-                    <delay>60</delay>
+                    <key>opendkim.version</key>
+                    <delay>3600</delay>
                     <history>30</history>
-                    <trends>365</trends>
+                    <trends>0</trends>
                     <status>0</status>
-                    <value_type>3</value_type>
+                    <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -110,17 +110,17 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>OpenDKIM version</name>
+                    <name>OpenDKIM service is running</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>opendkim.version</key>
-                    <delay>3600</delay>
+                    <key>proc.num[opendkim]</key>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <value_type>1</value_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>

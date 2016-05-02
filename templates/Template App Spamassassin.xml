@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>2.0</version>
-    <date>2015-08-12T07:34:02Z</date>
+    <version>3.0</version>
+    <date>2016-05-02T08:44:17Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Zabbix Templates</name>
         </group>
     </groups>
     <templates>
@@ -14,7 +14,7 @@
             <description/>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Zabbix Templates</name>
                 </group>
             </groups>
             <applications/>
@@ -67,7 +67,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template App Spamassassin:proc.num[spamd child].last(0)}&lt;2</expression>
+            <expression>{Template App Spamassassin:proc.num[spamd child].last(0)}=0</expression>
             <name>Service spamd is not running</name>
             <url/>
             <status>0</status>

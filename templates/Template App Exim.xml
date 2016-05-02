@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>2.0</version>
-    <date>2015-08-12T07:00:43Z</date>
+    <version>3.0</version>
+    <date>2016-05-02T08:34:46Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Zabbix Templates</name>
         </group>
     </groups>
     <templates>
@@ -14,7 +14,7 @@
             <description/>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Zabbix Templates</name>
                 </group>
             </groups>
             <applications>
@@ -75,7 +75,7 @@
                     <key>exim.version</key>
                     <delay>3600</delay>
                     <history>30</history>
-                    <trends>365</trends>
+                    <trends>0</trends>
                     <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
@@ -290,4 +290,19 @@
             </graph_items>
         </graph>
     </graphs>
+    <value_maps>
+        <value_map>
+            <name>Service state</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Down</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Up</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
 </zabbix_export>

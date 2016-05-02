@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>2.0</version>
-    <date>2015-08-12T07:00:26Z</date>
+    <version>3.0</version>
+    <date>2016-05-02T08:31:01Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Zabbix Templates</name>
         </group>
     </groups>
     <templates>
@@ -14,7 +14,7 @@
             <description/>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Zabbix Templates</name>
                 </group>
             </groups>
             <applications>
@@ -67,12 +67,12 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Etherpad is running</name>
+                    <name>Etherpad service is listening</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>proc.num[node]</key>
+                    <key>net.tcp.service[tcp,,10000]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -112,12 +112,12 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Etherpad service is listening</name>
+                    <name>Etherpad is running</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>net.tcp.service[tcp,,10000]</key>
+                    <key>proc.num[node]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -185,4 +185,19 @@
             <dependencies/>
         </trigger>
     </triggers>
+    <value_maps>
+        <value_map>
+            <name>Service state</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Down</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Up</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
 </zabbix_export>

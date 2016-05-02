@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>2.0</version>
-    <date>2014-08-04T13:37:32Z</date>
+    <version>3.0</version>
+    <date>2016-05-02T08:53:53Z</date>
     <groups>
         <group>
-            <name>OS Linux</name>
-        </group>
-        <group>
-            <name>Templates</name>
+            <name>Zabbix Templates</name>
         </group>
     </groups>
     <templates>
         <template>
             <template>Template Security</template>
             <name>Template Security</name>
+            <description/>
             <groups>
                 <group>
-                    <name>OS Linux</name>
-                </group>
-                <group>
-                    <name>Templates</name>
+                    <name>Zabbix Templates</name>
                 </group>
             </groups>
             <applications>
@@ -29,55 +24,13 @@
             </applications>
             <items>
                 <item>
-                    <name>Checksum of iptables policy</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>firewall-md5</key>
-                    <delay>3600</delay>
-                    <history>30</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Security</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                </item>
-                <item>
                     <name>Fail2ban is enabled in autostart</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>chkconfig[fail2ban]</key>
-                    <delay>3600</delay>
+                    <delay>1800</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -111,15 +64,16 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
-                    <name>Fail2Ban service is running</name>
+                    <name>iptables is enabled in autostart</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>proc.num[fail2ban-server]</key>
-                    <delay>60</delay>
+                    <key>chkconfig[iptables]</key>
+                    <delay>1800</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -138,7 +92,7 @@
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
+                    <data_type>3</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -153,6 +107,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Firewall enabled</name>
@@ -197,15 +152,16 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
-                    <name>iptables is enabled in autostart</name>
+                    <name>Checksum of iptables policy</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>chkconfig[iptables]</key>
-                    <delay>3600</delay>
+                    <key>firewall-md5</key>
+                    <delay>1800</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -224,7 +180,7 @@
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>3</data_type>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -239,15 +195,16 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
-                    <name>SELinux enabled</name>
+                    <name>Fail2Ban service is running</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>selinux-enabled</key>
-                    <delay>90</delay>
+                    <key>proc.num[fail2ban-server]</key>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -266,7 +223,7 @@
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>3</data_type>
+                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -280,9 +237,51 @@
                             <name>Security</name>
                         </application>
                     </applications>
-                    <valuemap>
-                        <name>Service state</name>
-                    </valuemap>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Users with UID 0</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>root_users</key>
+                    <delay>30</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Security</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules/>
@@ -323,7 +322,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Security:firewall-md5.diff(0)}#0</expression>
+            <expression>{Template Security:firewall-md5.diff(0)}&lt;&gt;0</expression>
             <name>iptables has been changed</name>
             <url/>
             <status>0</status>
@@ -343,14 +342,29 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Security:selinux-enabled.last(0)}=0</expression>
-            <name>SELinux is disabled</name>
+            <expression>{Template Security:root_users.change()}&gt;1</expression>
+            <name>Users with UID 0</name>
             <url/>
             <status>0</status>
-            <priority>3</priority>
-            <description/>
+            <priority>4</priority>
+            <description>trigger checks the system, if there are more users with the UID 0 than 1</description>
             <type>0</type>
             <dependencies/>
         </trigger>
     </triggers>
+    <value_maps>
+        <value_map>
+            <name>Service state</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>Down</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Up</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
 </zabbix_export>

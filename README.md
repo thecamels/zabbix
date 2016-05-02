@@ -18,6 +18,10 @@ Template App Amavisd
 ======
 Monitoring for Amavisd service.
 
+Template App Apache
+======
+Monitoring for Apache service.
+
 Template App APC
 ======
 Monitoring memory usage of APC (http://pecl.php.net/package/APC) module. File ```bin/apc-stats.php``` need to be accessed via HTTP for example http://127.0.0.1/apc-stats.php
@@ -26,9 +30,17 @@ Template App BIND
 ======
 Monitoring for BIND (DNS server) service. Checking also version of BIND.
 
+Template App Brocade HBA
+======
+Monitoring for Network Adapters - Brocade. Template is using Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
+
 Template App Clamav
 ======
 Monitoring for ClamAV.
+
+Template App cPanel
+======
+Monitoring basic WHM/cPanel services.
 
 Template App Dovecot
 ======
@@ -49,6 +61,10 @@ Monitoring CPU and MotherBoard temperatures by lm_senros module.
 Template App mdadm
 ======
 Monitoring mdadm arrays. Checking number of corrupted disk arrays.
+
+Template App Monit
+=====
+Monitoring for Monit service.
 
 Template App MySQL
 =====
@@ -76,34 +92,6 @@ Template App Nginx
 ======
 Monitoring for Nginx. It is using script ```nginx-check.sh``` written by Vincent Viallet.
 
-Template App Brocade HBA
-======
-Monitoring for Network Adapters - Brocade. Template is using Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
-
-Template App OpenDKIM
-======
-Monitoring for OpenDKIM.
-
-Template App Postfix
-======
-Monitoring for mail server Postfix.
-
-Template App Pure-FTPd
-======
-Monitoring for Pure-FTPd.
-
-Template App Redis
-======
-Monitoring for redis server 3.x. Support for redis cluster.
-
-Template App Spamassassin
-======
-Monitoring for Spamassassin.
-
-Template App vsftpd
-======
-Monitoring for vsftpd.
-
 Template App Nscd
 ======
 Nscd is a daemon that provides a cache for the most common name service requests. Nscd provides caching for accesses of the passwd(5), group(5), and hosts(5) databases through standard libc interfaces, such as getpwnam(3), getpwuid(3), getgrnam(3), getgrgid(3), gethostbyname(3), and others.
@@ -114,6 +102,42 @@ Template App OPcache
 ======
 Monitoring memory usage of OPcache (http://php.net/manual/en/book.opcache.php). File ```bin/opcache.php``` need to be accessed via HTTP for example http://127.0.0.1/opcache.php. Curl need to be installed on server.
 
+Template App OpenDKIM
+======
+Monitoring for OpenDKIM.
+
+Template App OpenVPN
+======
+Monitoring for OpenVPN service.
+
+Template App Percona XtraBackup
+======
+Monitoring for Percona XtraBackup.
+
+Template App PHP
+======
+Monitoring for PHP.
+
+Template App php-fpm
+======
+Monitoring for php-fpm.
+
+Template App Postfix
+======
+Monitoring for mail server Postfix.
+
+Template App PostgreSQL
+=====
+Monitoring for PostgreSQL.
+
+Template App PowerPath
+======
+Monitoring for EMC PowerPath: Host-based software for automated data path management, failover and recovery, and optimized load balancing. PowerPath automates, standardizes, and optimizes data paths in physical and virtual environments as well as cloud deployments to deliver high availability and performance.
+
+Template App Pure-FTPd
+======
+Monitoring for Pure-FTPd.
+
 Template App RabbitMQ
 ======
 Monitoring RabbitMQ (http://www.rabbitmq.com/) basic parameters like queues, exchanges and memory usage. You need install PHP on server for monitoring RabbitMQ. You need also add SUDO for zabbix user:
@@ -123,9 +147,48 @@ zabbix ALL=(ALL) NOPASSWD: /usr/sbin/rabbitmqctl
 zabbix ALL=(ALL) NOPASSWD: /usr/bin/php /etc/zabbix/bin/rabbit.php
 ```
 
-Template App cPanel
+Template App Redis
 ======
-Monitoring basic WHM/cPanel services.
+Monitoring for redis server 3.x. Support for redis cluster.
+
+Template App Rserve
+======
+Monitoring for Rserve, Binary R server.
+
+Template App S.M.A.R.T.
+======
+Monitoring for S.M.A.R.T. enabled storage devices (HDD's, SSD's and other). Uses discovery script to populate disks. INFO: For non present S.M.A.R.T. values disable items on per-host level.
+
+Template and scripts created by:
+Michał Macioszek, Taras Baran, Michal Gębora, Marcin Wilk, Maks Bednarek, Anna Fałek, Mikołaj Szczuraszek
+
+Template App Solr
+======
+Monitoring for Solr.
+
+Template App Spamassassin
+======
+Monitoring for Spamassassin.
+
+Template App SPAM Blacklist
+======
+Monitoring for SPAM Blacklist.
+
+Template App Unicorn
+======
+Monitoring for Unicorn.
+
+Template App Unicorn Rails
+======
+Monitoring for Unicorn Rails.
+
+Template App vsftpd
+======
+Monitoring for vsftpd.
+
+Template Device Back-UPS ES 700G	
+======
+Monitoring of APC UPS dedicated battery power. Requires package apcupsd to be installed. 
 
 Template Device BigIP F5
 ======
@@ -273,22 +336,10 @@ Dell Open Manage System Status
 
 You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /opt/dell/srvadmin/bin/omreport```
 
-Template App S.M.A.R.T.
-======
-Monitoring for S.M.A.R.T. enabled storage devices (HDD's, SSD's and other). Uses discovery script to populate disks. INFO: For non present S.M.A.R.T. values disable items on per-host level.
-
-Template and scripts created by:
-Michał Macioszek, Taras Baran, Michal Gębora, Marcin Wilk, Maks Bednarek, Anna Fałek, Mikołaj Szczuraszek
-
-
-Template App PowerPath
-======
-Monitoring for EMC PowerPath: Host-based software for automated data path management, failover and recovery, and optimized load balancing. PowerPath automates, standardizes, and optimizes data paths in physical and virtual environments as well as cloud deployments to deliver high availability and performance.
-
 Template Security
 ======
 Contains items related with basic linux security (iptables status, selinux status) and Fail2ban application. You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /sbin/iptables -L INPUT -n```
 
-Template Device Back-UPS ES 700G	
+Template SELinux
 ======
-Monitoring of APC UPS dedicated battery power. Requires package apcupsd to be installed. 
+Monitoring for SELinux service.
