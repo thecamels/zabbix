@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-05-02T08:43:28Z</date>
+    <date>2016-07-04T05:52:21Z</date>
     <groups>
         <group>
             <name>Zabbix Templates</name>
