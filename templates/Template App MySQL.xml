@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-05-02T12:01:10Z</date>
+    <date>2016-07-07T18:23:21Z</date>
     <groups>
         <group>
-            <name>Templates</name>
+            <name>Zabbix Templates</name>
         </group>
     </groups>
     <templates>
@@ -14,7 +14,7 @@
             <description/>
             <groups>
                 <group>
-                    <name>Templates</name>
+                    <name>Zabbix Templates</name>
                 </group>
             </groups>
             <applications>
@@ -79,7 +79,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Aborted_clients</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -122,7 +122,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Aborted_connects</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -165,7 +165,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.active_transactions</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -208,7 +208,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.adaptive_hash_memory</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -251,7 +251,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.additional_pool_alloc</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -294,7 +294,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.binary_log_space</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -337,7 +337,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Binlog_cache_disk_use</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -380,7 +380,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Binlog_cache_use</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -423,7 +423,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Bytes_received</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -466,7 +466,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Bytes_sent</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -509,7 +509,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_delete</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -552,7 +552,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_delete_multi</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -595,7 +595,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_insert</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -638,7 +638,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_insert_select</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -681,7 +681,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_load</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -724,7 +724,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_replace</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -767,7 +767,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_replace_select</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -810,7 +810,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_select</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -853,7 +853,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_update</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -896,7 +896,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Com_update_multi</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -933,56 +933,13 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>MySQL Connections</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>mysql.connection</key>
-                    <delay>30</delay>
-                    <history>30</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>3</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Database</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
                     <name>Connections</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Connections</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1025,7 +982,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Created_tmp_disk_tables</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1068,7 +1025,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Created_tmp_files</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1111,7 +1068,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Created_tmp_tables</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1154,7 +1111,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.current_transactions</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1197,7 +1154,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.database_pages</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1240,7 +1197,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.dictionary_cache_memory</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1283,7 +1240,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.file_fsyncs</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1326,7 +1283,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.file_reads</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1369,7 +1326,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.file_system_memory</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1412,7 +1369,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.file_writes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1455,7 +1412,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.free_pages</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1498,7 +1455,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_commit</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1541,7 +1498,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_delete</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1584,7 +1541,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_discover</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1627,7 +1584,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_prepare</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1670,7 +1627,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_read_first</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1713,7 +1670,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_read_key</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1756,7 +1713,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_read_next</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1799,7 +1756,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_read_prev</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1842,7 +1799,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_read_rnd</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1885,7 +1842,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_read_rnd_next</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1928,7 +1885,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_rollback</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1971,7 +1928,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_savepoint</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2014,7 +1971,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_savepoint_rollback</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2057,7 +2014,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_update</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2100,7 +2057,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Handler_write</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2143,7 +2100,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.hash_index_cells_total</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2186,7 +2143,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.hash_index_cells_used</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2229,7 +2186,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.history_list</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2272,7 +2229,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.ibuf_cell_count</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2315,7 +2272,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.ibuf_free_cells</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2358,7 +2315,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.ibuf_inserts</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2401,7 +2358,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.ibuf_merged</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2444,7 +2401,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.ibuf_merges</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2487,7 +2444,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.ibuf_used_cells</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2530,7 +2487,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.innodb_locked_tables</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2573,7 +2530,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.innodb_lock_structs</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2616,7 +2573,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.innodb_lock_wait_secs</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2659,7 +2616,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.innodb_log_buffer_size</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2702,7 +2659,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.innodb_open_files</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2745,7 +2702,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Innodb_row_lock_time</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2788,7 +2745,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Innodb_row_lock_waits</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2831,7 +2788,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.innodb_sem_waits</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2874,7 +2831,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.innodb_sem_wait_time_ms</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2917,7 +2874,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.innodb_tables_in_use</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -2960,7 +2917,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.innodb_transactions</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3003,7 +2960,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Key_buf_bytes_unflushed</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3046,7 +3003,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Key_buf_bytes_used</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3089,7 +3046,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Key_reads</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3132,7 +3089,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Key_read_requests</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3175,7 +3132,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Key_writes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3218,7 +3175,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Key_write_requests</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3261,7 +3218,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.locked_transactions</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3304,7 +3261,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.lock_system_memory</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3347,7 +3304,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.log_bytes_flushed</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3390,7 +3347,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.log_bytes_written</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3433,7 +3390,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.log_writes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3476,7 +3433,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Max_used_connections</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3491,7 +3448,7 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>0</formula>
+                    <formula>1</formula>
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
@@ -3519,7 +3476,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.modified_pages</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3562,7 +3519,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Opened_tables</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3605,7 +3562,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Open_files</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3648,7 +3605,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Open_tables</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3691,7 +3648,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.os_waits</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3734,7 +3691,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pages_created</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3777,7 +3734,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pages_read</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3820,7 +3777,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pages_written</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3863,7 +3820,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.page_hash_memory</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3906,7 +3863,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pending_aio_log_ios</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3949,7 +3906,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pending_aio_sync_ios</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -3992,7 +3949,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pending_buf_pool_flushes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4035,7 +3992,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pending_chkp_writes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4078,7 +4035,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pending_ibuf_aio_reads</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4121,7 +4078,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pending_log_flushes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4164,7 +4121,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pending_log_writes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4207,7 +4164,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pending_normal_aio_reads</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4250,7 +4207,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.pending_normal_aio_writes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4336,7 +4293,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Qcache_free_blocks</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4379,7 +4336,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Qcache_free_memory</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4422,7 +4379,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Qcache_hits</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4465,7 +4422,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Qcache_inserts</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4508,7 +4465,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Qcache_lowmem_prunes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4551,7 +4508,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Qcache_not_cached</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4594,7 +4551,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Qcache_queries_in_cache</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4637,7 +4594,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Qcache_total_blocks</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4723,7 +4680,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Questions</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4766,7 +4723,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.read_views</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4809,7 +4766,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.recovery_system_memory</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4852,7 +4809,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.relay_log_space</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4895,7 +4852,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.rows_deleted</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4938,7 +4895,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.rows_inserted</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -4981,7 +4938,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.rows_read</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5024,7 +4981,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.rows_updated</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5067,7 +5024,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Select_full_join</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5110,7 +5067,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Select_full_range_join</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5153,7 +5110,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Select_range</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5196,7 +5153,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Select_range_check</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5239,7 +5196,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Select_scan</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5282,7 +5239,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.setting.binlog_cache_size</key>
-                    <delay>3600</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5626,7 +5583,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.slave_lag</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5669,7 +5626,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Slave_open_temp_tables</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5712,7 +5669,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Slave_retried_transactions</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5755,7 +5712,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.slave_running</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5798,7 +5755,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.slave_stopped</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5884,7 +5841,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Slow_launch_threads</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5927,7 +5884,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Slow_queries</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -5970,7 +5927,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Sort_merge_passes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6013,7 +5970,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Sort_range</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6056,7 +6013,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Sort_rows</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6099,7 +6056,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Sort_scan</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6142,7 +6099,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.spin_rounds</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6185,7 +6142,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.spin_waits</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6228,7 +6185,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_closing_tables</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6271,7 +6228,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_copying_to_tmp_table</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6314,7 +6271,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_end</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6357,7 +6314,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_freeing_items</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6400,7 +6357,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_init</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6443,7 +6400,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_locked</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6486,7 +6443,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_login</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6529,7 +6486,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_none</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6572,7 +6529,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_other</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6615,7 +6572,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_preparing</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6658,7 +6615,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_reading_from_net</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6701,7 +6658,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_sending_data</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6744,7 +6701,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_sorting_result</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6787,7 +6744,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_statistics</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6830,7 +6787,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_updating</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6873,7 +6830,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.State_writing_to_net</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6916,7 +6873,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Table_locks_immediate</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -6959,7 +6916,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Table_locks_waited</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -7045,7 +7002,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Threads_cached</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -7088,7 +7045,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Threads_connected</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -7131,7 +7088,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Threads_created</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -7174,7 +7131,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.Threads_running</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -7217,7 +7174,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.thread_hash_memory</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -7260,7 +7217,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.total_mem_alloc</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -7303,7 +7260,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.uncheckpointed_bytes</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -7346,7 +7303,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>mysql.unflushed_log</key>
-                    <delay>120</delay>
+                    <delay>60</delay>
                     <history>30</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -7941,6 +7898,16 @@
             <dependencies/>
         </trigger>
         <trigger>
+            <expression>{Template App MySQL:mysql.Max_used_connections.last()}&gt;({Template App MySQL:mysql.setting.max_connections.last()}-2)</expression>
+            <name>Connection limit reached (current {ITEM.LASTVALUE}) in MySQL</name>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
             <expression>{Template App MySQL:mysql.innodb_lock_structs.delta(900)}&gt;100</expression>
             <name>InnoDB lock structures more than 100 in 15m</name>
             <url/>
@@ -8011,26 +7978,6 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template App MySQL:mysql.connection.last(0)}&gt;300</expression>
-            <name>Mysql too many connections: {ITEM.LASTVALUE}</name>
-            <url/>
-            <status>0</status>
-            <priority>5</priority>
-            <description/>
-            <type>0</type>
-            <dependencies/>
-        </trigger>
-        <trigger>
-            <expression>{Template App MySQL:mysql.connection.last(0)}&gt;2500</expression>
-            <name>Mysql too many connections: {ITEM.LASTVALUE}</name>
-            <url/>
-            <status>0</status>
-            <priority>5</priority>
-            <description/>
-            <type>0</type>
-            <dependencies/>
-        </trigger>
-        <trigger>
             <expression>{Template App MySQL:mysql.Table_locks_waited.delta(300)}&gt;10</expression>
             <name>Server is waiting on table locks</name>
             <url/>
@@ -8056,6 +8003,16 @@
             <url/>
             <status>0</status>
             <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template App MySQL:mysql.Max_used_connections.last()}&gt;({Template App MySQL:mysql.setting.max_connections.last()}*0.9)</expression>
+            <name>Too many connections (over 90%,current {ITEM.LASTVALUE}) in MySQL</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
             <description/>
             <type>0</type>
             <dependencies/>
@@ -8254,14 +8211,14 @@
             <graph_items>
                 <graph_item>
                     <sortorder>0</sortorder>
-                    <drawtype>2</drawtype>
-                    <color>FF7D00</color>
+                    <drawtype>1</drawtype>
+                    <color>FFD660</color>
                     <yaxisside>1</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
                         <host>Template App MySQL</host>
-                        <key>mysql.Threads_connected</key>
+                        <key>mysql.Max_used_connections</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -8278,6 +8235,18 @@
                 </graph_item>
                 <graph_item>
                     <sortorder>2</sortorder>
+                    <drawtype>2</drawtype>
+                    <color>FF7D00</color>
+                    <yaxisside>1</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Template App MySQL</host>
+                        <key>mysql.Threads_connected</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
                     <drawtype>0</drawtype>
                     <color>FF3932</color>
                     <yaxisside>1</yaxisside>
@@ -8289,7 +8258,7 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>3</sortorder>
+                    <sortorder>4</sortorder>
                     <drawtype>0</drawtype>
                     <color>4444FF</color>
                     <yaxisside>1</yaxisside>
@@ -8301,7 +8270,7 @@
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>4</sortorder>
+                    <sortorder>5</sortorder>
                     <drawtype>0</drawtype>
                     <color>00FF00</color>
                     <yaxisside>1</yaxisside>
@@ -8310,18 +8279,6 @@
                     <item>
                         <host>Template App MySQL</host>
                         <key>mysql.Aborted_connects</key>
-                    </item>
-                </graph_item>
-                <graph_item>
-                    <sortorder>5</sortorder>
-                    <drawtype>1</drawtype>
-                    <color>FFD660</color>
-                    <yaxisside>1</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Template App MySQL</host>
-                        <key>mysql.Max_used_connections</key>
                     </item>
                 </graph_item>
             </graph_items>
