@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-08-01T19:35:29Z</date>
+    <date>2016-08-01T19:35:53Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template App Amavisd</template>
-            <name>Template App Amavisd</name>
+            <template>Template App ClamAV</template>
+            <name>Template App ClamAV</name>
             <description/>
             <groups>
                 <group>
@@ -19,17 +19,17 @@
             </groups>
             <applications>
                 <application>
-                    <name>Amavisd</name>
+                    <name>ClamAV</name>
                 </application>
             </applications>
             <items>
                 <item>
-                    <name>Amavis service is running</name>
+                    <name>ClamAV service is running</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>proc.num[amavisd]</key>
+                    <key>proc.num[clamd]</key>
                     <delay>90</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -60,7 +60,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Amavisd</name>
+                            <name>ClamAV</name>
                         </application>
                     </applications>
                     <valuemap>
@@ -77,8 +77,8 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template App Amavisd:proc.num[amavisd].last(0)}=0</expression>
-            <name>Service amavis is not running</name>
+            <expression>{Template App ClamAV:proc.num[clamd].last(0)}=0</expression>
+            <name>Service clamd (clamav) is not running</name>
             <url/>
             <status>0</status>
             <priority>3</priority>

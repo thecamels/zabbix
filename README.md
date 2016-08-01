@@ -34,7 +34,7 @@ Template App Brocade HBA
 ======
 Monitoring for Network Adapters - Brocade. Template is using Discovery to create Items and Triggers. You need also add SUDO for zabbix user: ```zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu```
 
-Template App Clamav
+Template App ClamAV
 ======
 Monitoring for ClamAV.
 
@@ -190,9 +190,9 @@ Template App vsftpd
 ======
 Monitoring for vsftpd.
 
-Template Device Back-UPS ES 700G	
+Template Device Back-UPS ES 700G
 ======
-Monitoring of APC UPS dedicated battery power. Requires package apcupsd to be installed. 
+Monitoring of APC UPS dedicated battery power. Requires package apcupsd to be installed.
 
 Template Device BigIP F5
 ======
