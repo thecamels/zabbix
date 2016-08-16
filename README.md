@@ -54,6 +54,14 @@ Template App Exim
 =====
 Monitoring for mail server Exim.
 
+Template App Fail2Ban
+=====
+Monitoring for Fail2Ban, an intrusion prevention software framework that protects computer servers from brute-force attacks.
+
+Template App Iptables
+=====
+Monitoring for Iptables. You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /sbin/iptables -L INPUT -n```
+
 Template App Rserve
 =====
 Monitoring for RServer in R.
@@ -70,7 +78,7 @@ Template App Monit
 =====
 Monitoring for Monit service.
 
-Template App MySQL
+Template App MySQLd
 =====
 Monitoring for MySQL 5.5, 5.6 and 5.7. It is using PHP-cli for monitoring. You need also add zabbix user to database. Please run SQL query:
 ```
@@ -158,6 +166,10 @@ Monitoring for redis server 3.x. Support for redis cluster.
 Template App Rserve
 ======
 Monitoring for Rserve, Binary R server.
+
+Template App Squid
+======
+Monitoring for Squid, a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more.
 
 Template App S.M.A.R.T.
 ======
@@ -339,10 +351,6 @@ Dell Open Manage System Status
 ```
 
 You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /opt/dell/srvadmin/bin/omreport```
-
-Template Security
-======
-Contains items related with basic linux security (iptables status, selinux status) and Fail2ban application. You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /sbin/iptables -L INPUT -n```
 
 Template SELinux
 ======
