@@ -16,10 +16,54 @@ Please let us know if you have any questions or concerns.
 # Table of contents
 -----
 1. Templates
-   * [Amavisd](#templateappamavisd)
-   * [Apache](#templateappapache)
-   * [APC](#templateappapc)
-   * [BIND](#templateappbind)
+   * [Amavisd](#template-app-amavisd)
+   * [Apache](#template-app-apache)
+   * [APC](#template-app-apc)
+   * [BIND](#template-app-bind)
+   * [Brocade HBA](#template-app-brocade-hba)
+   * [ClamAV](#template-app-clamav)
+   * [CPanel](#template-app-cpanel)
+   * [Dovecot](#template-app-dovecot)
+   * [Etherpad](#template-app-etherpad)
+   * [EXIM](#template-app-exim)
+   * [Fail2Ban](#template-app-fail2ban)
+   * [Iptables](#template-app-iptables)
+   * [lm_sensors](#template-app-lm_sensors)
+   * [mdadm](#template-app-mdadm)
+   * [Monit](#template-app-monit)
+   * [MySQL](#template-app-mysqld)
+   * [MySQL Slave](#template-app-mysql-slave)
+   * [Nginx](#template-app-nginx)
+   * [Nscd](#template-app-nscd)
+   * [OpCahce](#template-app-opcache)
+   * [OpenDKIM](#template-app-opendkim)
+   * [OpenVPN](#template-app-openvpn)
+   * [Percona Xtrabackup](#template-app-percona-xtrabackup)
+   * [PHP](#template-app-php)
+   * [PHP FPM](#template-app-php-fpm)
+   * [Postfix](#template-app-postfix)
+   * [PostgreSQL](#template-app-postgresql)
+   * [PowerPath](#template-app-powerpath)
+   * [Pure-FTPd](#template-app-pure-ftpd)
+   * [RabbitMQ](#template-app-rabbitmq)
+   * [Redis](#template-app-redis)
+   * [Rserve](#template-app-rserve)
+   * [Squid](#template-app-squid)
+   * [S.M.A.R.T.](#template-app-s.m.a.r.t.)
+   * [Solr](#template-app-solr)
+   * [Spamassassin](#template-app-spamassassin)
+   * [SPAM Blacklist](#template-app-spam-blacklist)
+   * [Unicorn](#template-app-unicorn)
+   * [Unicorn Rails](#template-app-unicorn-rails)
+   * [vsftpd](#template-app-vsftpd)
+   * [Back-UPS ES-700g](#template-device-back-ups-es-700g)
+   * [BigIP F5](#template-device-bigip-f5)
+   * [Cisco ASA](#template-device-cisco-asa)
+   * [NetApp](#template-device-netapp)
+   * [SNMP generic](#template-device-snmp-generic)
+   * [Inventory](#template-inventory)
+   * [Dell OMSA](#template-omsa)
+   * [SELinux](#template-selinux)
 -----
 
 ## Template App Amavisd
@@ -57,9 +101,6 @@ Monitoring for Fail2Ban, an intrusion prevention software framework that protect
 
 ## Template App Iptables
 Monitoring for Iptables. You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /sbin/iptables -L INPUT -n```
-
-## Template App Rserve
-Monitoring for RServer in R.
 
 ## Template App lm_sensors
 Monitoring CPU and MotherBoard temperatures by lm_senros module.
