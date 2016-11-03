@@ -1,4 +1,6 @@
 zabbix ALL=(ALL) NOPASSWD: /sbin/iptables -L INPUT -n
+zabbix ALL=(ALL) NOPASSWD: /sbin/iptables -S fail2ban-permanent
+zabbix ALL=(ALL) NOPASSWD: /sbin/iptables -S fail2ban-banned
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/nscd -g
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/smartctl
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/rabbitmqctl
@@ -14,5 +16,7 @@ zabbix ALL=(ALL) NOPASSWD: /usr/sbin/dmidecode
 zabbix ALL=(ALL) NOPASSWD: /usr/bin/stat
 zabbix ALL=(ALL) NOPASSWD: /usr/bin/md5sum
 zabbix ALL=(ALL) NOPASSWD: /bin/find /var/lib/mysql/ -type f -printf %p+%s=
+zabbix ALL=(ALL) NOPASSWD: /bin/find /san/mysql-fs/mysql/ -type f -printf %p+%s=
 zabbix ALL=(ALL) NOPASSWD: /etc/zabbix/bin/haproxy.sh
+zabbix ALL=(ALL) NOPASSWD: /usr/bin/du
 Defaults:zabbix        !requiretty
