@@ -30,6 +30,7 @@ Please let us know if you have any questions or concerns.
    * [Iptables](#template-app-iptables)
    * [lm_sensors](#template-app-lm_sensors)
    * [mdadm](#template-app-mdadm)
+   * [Memory Usage of Specific Process](#template-specific-process-memory-usage)
    * [Monit](#template-app-monit)
    * [MySQL](#template-app-mysqld)
    * [MySQL Slave](#template-app-mysql-slave)
@@ -64,6 +65,7 @@ Please let us know if you have any questions or concerns.
    * [Inventory](#template-inventory)
    * [Dell OMSA](#template-omsa)
    * [SELinux](#template-selinux)
+
 -----
 
 ## Template App Amavisd
@@ -108,6 +110,9 @@ Monitoring CPU and MotherBoard temperatures by lm_senros module.
 ## Template App mdadm
 Monitoring mdadm arrays. Checking number of corrupted disk arrays.
 
+## Template Specific Process Memory Usage
+Monitoring memory usag of Specific Process, like Python, unicorn-rails and Nginx.
+   
 ## Template App Monit
 Monitoring for Monit service.
 
