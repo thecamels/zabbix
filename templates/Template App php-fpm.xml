@@ -119,7 +119,7 @@
     <triggers>
         <trigger>
             <expression>{Template App php-fpm:chkconfig[php-fpm].last(0)}=0</expression>
-            <name>pgp-fpm is not enabled in autostart</name>
+            <name>php-fpm is not enabled in autostart</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
