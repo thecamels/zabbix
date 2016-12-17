@@ -166,7 +166,7 @@
     <triggers>
         <trigger>
             <expression>{Template App Pure-FTPd:proc.num[pure-ftpd].last(0)}=0</expression>
-            <name>vsftpd is down</name>
+            <name>pure-ftpd is down</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
@@ -176,7 +176,7 @@
         </trigger>
         <trigger>
             <expression>{Template App Pure-FTPd:chkconfig[pure-ftpd].last(0)}=0</expression>
-            <name>vsftpd is not enabled in autostart</name>
+            <name>pure-ftpd is not enabled in autostart</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
@@ -186,7 +186,7 @@
         </trigger>
         <trigger>
             <expression>{Template App Pure-FTPd:net.tcp.service[ftp].last(0)}=0</expression>
-            <name>vsftpd server is down</name>
+            <name>pure-ftpd server is down</name>
             <url/>
             <status>0</status>
             <priority>3</priority>
