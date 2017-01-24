@@ -44,7 +44,7 @@
                 <item>
                     <name>Chassis fan (first) speed</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.2.1.2.1.3.1</snmp_oid>
                     <key>sysChassisFanSpeed.1</key>
@@ -87,7 +87,7 @@
                 <item>
                     <name>Chassis fan (second) speed</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.2.1.2.1.3.2</snmp_oid>
                     <key>sysChassisFanSpeed.2</key>
@@ -130,7 +130,7 @@
                 <item>
                     <name>Chassis fan (third) speed</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.2.1.2.1.3.3</snmp_oid>
                     <key>sysChassisFanSpeed.3</key>
@@ -173,7 +173,7 @@
                 <item>
                     <name>Chassis fan (first) status</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.2.1.2.1.2.1</snmp_oid>
                     <key>sysChassisFanStatus.1</key>
@@ -216,7 +216,7 @@
                 <item>
                     <name>Chassis fan (second) status</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.2.1.2.1.2.2</snmp_oid>
                     <key>sysChassisFanStatus.2</key>
@@ -259,7 +259,7 @@
                 <item>
                     <name>Chassis fan (third) status</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.2.1.2.1.2.3</snmp_oid>
                     <key>sysChassisFanStatus.3</key>
@@ -302,7 +302,7 @@
                 <item>
                     <name>Power supply (first) status</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.2.2.2.1.2.1</snmp_oid>
                     <key>sysChassisPowerSupplyStatus.1</key>
@@ -345,7 +345,7 @@
                 <item>
                     <name>Power supply (second) status</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.2.2.2.1.2.2</snmp_oid>
                     <key>sysChassisPowerSupplyStatus.2</key>
@@ -388,7 +388,7 @@
                 <item>
                     <name>CPU fan speed</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.1.2.1.3.1</snmp_oid>
                     <key>sysCpuFanSpeed</key>
@@ -431,7 +431,7 @@
                 <item>
                     <name>CPU temperature</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.3.1.2.1.2.1</snmp_oid>
                     <key>sysCpuTemperature</key>
@@ -474,7 +474,7 @@
                 <item>
                     <name>CPU iowait</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.28.0</snmp_oid>
                     <key>sysGlobalHostCpuIowait1m</key>
@@ -517,7 +517,7 @@
                 <item>
                     <name>CPU irq</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.26.0</snmp_oid>
                     <key>sysGlobalHostCpuIrq1m</key>
@@ -560,7 +560,7 @@
                 <item>
                     <name>CPU nice</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.23.0</snmp_oid>
                     <key>sysGlobalHostCpuNice1m</key>
@@ -603,7 +603,7 @@
                 <item>
                     <name>CPU softirq</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.27.0</snmp_oid>
                     <key>sysGlobalHostCpuSoftirq1m</key>
@@ -646,7 +646,7 @@
                 <item>
                     <name>CPU stolen</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.40.0</snmp_oid>
                     <key>sysGlobalHostCpuStolen1m</key>
@@ -689,7 +689,7 @@
                 <item>
                     <name>CPU system</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.24.0</snmp_oid>
                     <key>sysGlobalHostCpuSystem1m</key>
@@ -732,7 +732,7 @@
                 <item>
                     <name>CPU usage ratio 1m</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.29.0</snmp_oid>
                     <key>sysGlobalHostCpuUsageRatio1m</key>
@@ -775,7 +775,7 @@
                 <item>
                     <name>CPU usage ratio 5m</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.37.0</snmp_oid>
                     <key>sysGlobalHostCpuUsageRatio5m</key>
@@ -818,7 +818,7 @@
                 <item>
                     <name>CPU usage ratio 5s</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.21.0</snmp_oid>
                     <key>sysGlobalHostCpuUsageRatio5s</key>
@@ -861,7 +861,7 @@
                 <item>
                     <name>CPU user</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.20.22.0</snmp_oid>
                     <key>sysGlobalHostCpuUser1m</key>
@@ -904,7 +904,7 @@
                 <item>
                     <name>Total bytes in</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.21.4.0</snmp_oid>
                     <key>sysGlobalTmmStatClientBytesIn</key>
@@ -947,7 +947,7 @@
                 <item>
                     <name>Total bytes out</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.21.6.0</snmp_oid>
                     <key>sysGlobalTmmStatClientBytesOut</key>
@@ -990,7 +990,7 @@
                 <item>
                     <name>Memory Total</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.7.1.1.0</snmp_oid>
                     <key>sysHostMemoryTotal</key>
@@ -1033,7 +1033,7 @@
                 <item>
                     <name>Memory Used</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.7.1.2.0</snmp_oid>
                     <key>sysHostMemoryUsed</key>
@@ -1076,7 +1076,7 @@
                 <item>
                     <name>ICMP In</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.5.3.0</snmp_oid>
                     <key>sysIcmpStatRx</key>
@@ -1120,7 +1120,7 @@ received.</description>
                 <item>
                     <name>ICMP Out</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.5.2.0</snmp_oid>
                     <key>sysIcmpStatTx</key>
@@ -1163,7 +1163,7 @@ received.</description>
                 <item>
                     <name>IP In</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.7.3.0</snmp_oid>
                     <key>sysIpStatRx</key>
@@ -1206,7 +1206,7 @@ received.</description>
                 <item>
                     <name>IP Out</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.7.2.0</snmp_oid>
                     <key>sysIpStatTx</key>
@@ -1249,7 +1249,7 @@ received.</description>
                 <item>
                     <name>System name</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.2.1.1.5.0</snmp_oid>
                     <key>sysName</key>
@@ -1292,7 +1292,7 @@ received.</description>
                 <item>
                     <name>TMM Memory Total</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.1.44.0</snmp_oid>
                     <key>sysStatMemoryTotal</key>
@@ -1335,7 +1335,7 @@ received.</description>
                 <item>
                     <name>TMM Memory Used</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
                     <snmp_oid>.1.3.6.1.4.1.3375.2.1.1.2.1.45.0</snmp_oid>
                     <key>sysStatMemoryUsed</key>
@@ -1378,7 +1378,7 @@ received.</description>
                 <item>
                     <name>sysUpTime</name>
                     <type>4</type>
-                    <snmp_community>public</snmp_community>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>1</multiplier>
                     <snmp_oid>1.3.6.1.2.1.1.3.0</snmp_oid>
                     <key>sysUpTimeInstance</key>
