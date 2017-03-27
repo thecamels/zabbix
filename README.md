@@ -1,6 +1,6 @@
 Zabbix
 ======
-Script and templates for Zabbix 2.2.x, 2.4.x, 3.0.x
+Script and templates for Zabbix 2.2.x, 2.4.x, 3.0.x, 3.2.x
 
 - In bin you will find Bash/Perl/PHP scripts used by some User Parameters (need to be installed on agent)
 - In sudoers.d you can find settings for sudo
