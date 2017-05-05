@@ -155,12 +155,12 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Redis version</name>
+                    <name>[Redis] version</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>redis.version</key>
+                    <key>redis[redis_version]</key>
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>0</trends>
