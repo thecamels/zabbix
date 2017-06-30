@@ -1333,7 +1333,6 @@ received.</description>
                     <logtimefmt/>
                 </item>
                 <item>
-                <item>
                     <name>TMM Memory Total</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
