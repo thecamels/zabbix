@@ -65,6 +65,7 @@ Please let us know if you have any questions or concerns.
    * [Inventory](#template-inventory)
    * [Dell OMSA](#template-omsa)
    * [SELinux](#template-selinux)
+   * [Wowza](#template-wowza)
 
 -----
 
@@ -112,7 +113,7 @@ Monitoring mdadm arrays. Checking number of corrupted disk arrays.
 
 ## Template Specific Process Memory Usage
 Monitoring memory usag of Specific Process, like Python, unicorn-rails and Nginx.
-   
+
 ## Template App Monit
 Monitoring for Monit service.
 
@@ -360,3 +361,6 @@ You need also add SUDO for zabbix user: ```zabbix  ALL=(ALL) NOPASSWD: /opt/dell
 
 ## Template SELinux
 Monitoring for SELinux service.
+
+## Template Wowza
+Monitoring for Wowza Streaming Engine server
