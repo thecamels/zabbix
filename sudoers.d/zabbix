@@ -5,18 +5,20 @@ zabbix ALL=(ALL) NOPASSWD: /usr/sbin/nscd -g
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/smartctl
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/rabbitmqctl
 zabbix ALL=(ALL) NOPASSWD: /usr/bin/php /etc/zabbix/bin/rabbit.php
-apache ALL=(ALL) NOPASSWD: /usr/bin/scanimage
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/exim -bp
-zabbix ALL=(ALL) NOPASSWD: /opt/dell/srvadmin/bin/omreport
-zabbix ALL=(ALL) NOPASSWD: /usr/bin/bcu
-zabbix ALL=(ALL) NOPASSWD: /sbin/powermt
 zabbix ALL=(ALL) NOPASSWD: /bin/find /var/spool/postfix/ -type f
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/httpd -v
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/dmidecode
 zabbix ALL=(ALL) NOPASSWD: /usr/bin/stat
 zabbix ALL=(ALL) NOPASSWD: /usr/bin/md5sum
 zabbix ALL=(ALL) NOPASSWD: /bin/find /var/lib/mysql/ -type f -printf %p+%s=
-zabbix ALL=(ALL) NOPASSWD: /bin/find /san/mysql-fs/mysql/ -type f -printf %p+%s=
 zabbix ALL=(ALL) NOPASSWD: /etc/zabbix/bin/haproxy.sh
 zabbix ALL=(ALL) NOPASSWD: /usr/bin/du
+zabbix ALL=(ALL) NOPASSWD: /usr/bin/salt-key --list all --output txt
+zabbix ALL=(ALL) NOPASSWD: /usr/bin/supervisorctl status
+zabbix ALL=(ALL) NOPASSWD: /bin/ls
+zabbix ALL=(ALL) NOPASSWD: /usr/bin/amavisd-agent -c 1
+zabbix ALL=(ALL) NOPASSWD: /usr/sbin/whmapi1
+zabbix ALL=(vps:vps) NOPASSWD: /usr/bin/VBoxManage
+zabbix ALL=(postgres:postgres) NOPASSWD: /usr/bin/psql
 Defaults:zabbix        !requiretty
