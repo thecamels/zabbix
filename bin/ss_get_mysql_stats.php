@@ -30,13 +30,13 @@ if ( !array_key_exists('SCRIPT_FILENAME', $_SERVER)
 $mysql_user = 'zabbix';
 $mysql_pass = 'wJ44mR6a59r3duDr';
 $mysql_port = 3306;
-$mysql_ssl  = FALSE;   # Whether to use SSL to connect to MySQL.
+$mysql_ssl  = false;   # Whether to use SSL to connect to MySQL.
 $mysql_ssl_key  = '/etc/pki/tls/certs/mysql/client-key.pem';
 $mysql_ssl_cert = '/etc/pki/tls/certs/mysql/client-cert.pem';
 $mysql_ssl_ca   = '/etc/pki/tls/certs/mysql/ca-cert.pem';
 
-$heartbeat = FALSE;        # Whether to use pt-heartbeat table for repl. delay calculation.
-$heartbeat_utc = FALSE;    # Whether pt-heartbeat is run with --utc option.
+$heartbeat = false;        # Whether to use pt-heartbeat table for repl. delay calculation.
+$heartbeat_utc = false;    # Whether pt-heartbeat is run with --utc option.
 $heartbeat_server_id = 0;  # Server id to associate with a heartbeat. Leave 0 if no preference.
 $heartbeat_table = 'percona.heartbeat'; # db.tbl.
 
@@ -51,9 +51,9 @@ $chk_options = array (
    'get_qrt' => true,    # Get query response times from Percona Server or MariaDB?
 );
 
-$use_ss    = FALSE; # Whether to use the script server or not
-$debug     = FALSE; # Define whether you want debugging behavior.
-$debug_log = FALSE; # If $debug_log is a filename, it'll be used.
+$use_ss    = false; # Whether to use the script server or not
+$debug     = false; # Define whether you want debugging behavior.
+$debug_log = false; # If $debug_log is a filename, it'll be used.
 
 # ============================================================================
 # You should not need to change anything below this line.
@@ -309,11 +309,11 @@ function ss_get_mysql_stats( $options ) {
    }
    if ( $mysql_ssl ) {
       $conn = mysqli_init();
-      mysqli_ssl_set($conn, $mysql_ssl_key, $mysql_ssl_cert, $mysql_ssl_ca, NULL, NULL);
-      mysqli_real_connect($conn, $host, $user, $pass, NULL, $port);
+      mysqli_ssl_set($conn, $mysql_ssl_key, $mysql_ssl_cert, $mysql_ssl_ca, null, null);
+      mysqli_real_connect($conn, $host, $user, $pass, null, $port);
    }
    else {
-      $conn = mysqli_connect($host, $user, $pass, NULL, $port);
+      $conn = mysqli_connect($host, $user, $pass, null, $port);
    }
    if ( mysqli_connect_errno() ) {
       debug("MySQL connection failed: " . mysqli_connect_error());
@@ -821,7 +821,7 @@ function ss_get_mysql_stats( $options ) {
    }
    $result = implode(' ', $output);
    if ( $fp ) {
-      if ( fwrite($fp, $result) === FALSE ) {
+      if ( fwrite($fp, $result) === false ) {
          die("Can't write '$cache_file'");
       }
       fclose($fp);
@@ -896,7 +896,7 @@ function get_innodb_array($text) {
       'innodb_sem_waits'          => null,
       'innodb_sem_wait_time_ms'   => null,
    );
-   $txn_seen = FALSE;
+   $txn_seen = false;
    foreach ( explode("\n", $text) as $line ) {
       $line = trim($line);
       $row = preg_split('/ +/', $line);
@@ -917,7 +917,7 @@ function get_innodb_array($text) {
          $results['os_waits'][]   = to_int($row[5]);
          $results['os_waits'][]   = to_int($row[11]);
       }
-      elseif (strpos($line, 'RW-shared spins') === 0 && strpos($line, '; RW-excl spins') === FALSE) {
+      elseif (strpos($line, 'RW-shared spins') === 0 && strpos($line, '; RW-excl spins') === false) {
          # Post 5.5.17 SHOW ENGINE INNODB STATUS syntax
          # RW-shared spins 604733, rounds 8107431, OS waits 241268
          $results['spin_waits'][] = to_int($row[2]);
@@ -944,7 +944,7 @@ function get_innodb_array($text) {
          # Trx id counter 861B144C
          $results['innodb_transactions'] = make_bigint(
             $row[3], (isset($row[4]) ? $row[4] : null));
-         $txn_seen = TRUE;
+         $txn_seen = true;
       }
       elseif ( strpos($line, 'Purge done for trx') === 0 ) {
          # Purge done for trx's n:o < 0 1170663853 undo n:o < 0 0
@@ -1364,12 +1364,12 @@ function debug($val) {
          $calls[] = "at $file:$line";
       }
       fwrite($fp, date('Y-m-d H:i:s') . ' ' . implode(' <- ', $calls));
-      fwrite($fp, "\n" . var_export($val, TRUE) . "\n");
+      fwrite($fp, "\n" . var_export($val, true) . "\n");
       fclose($fp);
    }
    else { # Disable logging
       print("Warning: disabling debug logging to $debug_log\n");
-      $debug_log = FALSE;
+      $debug_log = false;
    }
 }
 

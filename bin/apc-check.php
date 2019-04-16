@@ -4,11 +4,11 @@ $item = $argv[1];
 function file_get_contents_curl($url) {
     $ch = curl_init();
 
-    curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
+    curl_setopt($ch, CURLOPT_AUTOREFERER, true);
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_URL, 'http://127.0.0.1/apc-stats.php?apc=' . $url);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 
     $data = curl_exec($ch);
     curl_close($ch);

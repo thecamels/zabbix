@@ -6,7 +6,7 @@ if ($_SERVER['SERVER_ADDR'] != $_SERVER['REMOTE_ADDR']){
 }
 
 $configuration = opcache_get_configuration();
-$status = opcache_get_status(FALSE);
+$status = opcache_get_status(false);
 
 switch($_GET['item']) {
     // CONFIGURATION
